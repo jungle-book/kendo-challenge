@@ -1,6 +1,7 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
+@import "@progress/kendo-theme-default/dist/all.css";
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
