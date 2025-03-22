@@ -1,3 +1,5 @@
+import { Carasoule, CarasouleItem } from "@/components/Carasoule";
+import { ForYouThumbnail } from "@/components/ForYouThumbnail";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
@@ -5,5 +7,37 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  return <>Hi</>;
+  return (
+    <div>
+      <Carasoule>
+        <CarasouleItem>
+          <ForYouThumbnail />
+        </CarasouleItem>
+        <CarasouleItem>
+          <ForYouThumbnail />
+        </CarasouleItem>
+        <CarasouleItem>
+          <ForYouThumbnail />
+        </CarasouleItem>
+        <CarasouleItem>
+          <ForYouThumbnail />
+        </CarasouleItem>
+        <CarasouleItem>
+          <ForYouThumbnail />
+        </CarasouleItem>
+        <CarasouleItem>
+          <ForYouThumbnail />
+        </CarasouleItem>
+        <CarasouleItem>
+          <ForYouThumbnail />
+        </CarasouleItem>
+        <CarasouleItem>
+          <ForYouThumbnail />
+        </CarasouleItem>
+        <CarasouleItem>
+          <ForYouThumbnail />
+        </CarasouleItem>
+      </Carasoule>
+    </div>
+  );
 }

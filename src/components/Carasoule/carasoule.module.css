@@ -1,0 +1,9 @@
+.container {
+    border: 1px solid red;
+}
+
+.container__list {
+    display: flex;
+    overflow-wrap: anywhere;
+    gap: 0.5rem;
+}

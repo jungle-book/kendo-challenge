@@ -9,9 +9,15 @@
     font-family: "Inter", sans-serif;
 }
 
+.bg-white {
+    background-color: white !important;
+}
+
 :root {
     --spacing-1: 0.5rem;
     --background-paper: #212124;
     --background-main: #171719;
     --divider-color: lightgray;
+
+    --fg-subtitle: #9898a6;
 }

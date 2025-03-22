@@ -1,0 +1,1 @@
+export { ForYouThumbnail } from "./ForYouThumbnail";

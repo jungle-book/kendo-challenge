@@ -1,10 +1,11 @@
 import { FC } from "react";
 
 import styles from "./icon-button.module.css";
+import clsx from "clsx";
 
-export const IconButton: FC<IconButtonProps> = ({ icon }) => {
+export const IconButton: FC<IconButtonProps> = ({ icon, classes }) => {
   return (
-    <button className={styles["container"]}>
+    <button className={clsx(styles["container"], classes)}>
       <img src={icon} />
     </button>
   );
@@ -13,4 +14,5 @@ export const IconButton: FC<IconButtonProps> = ({ icon }) => {
 type IconButtonProps = {
   icon: string;
   onClick?: () => void;
+  classes?: string[];
 };
