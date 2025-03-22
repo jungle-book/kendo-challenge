@@ -11,4 +11,7 @@
 
 :root {
     --spacing-1: 0.5rem;
+    --background-paper: #212124;
+    --background-main: #171719;
+    --divider-color: lightgray;
 }

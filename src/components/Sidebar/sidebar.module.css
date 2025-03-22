@@ -7,5 +7,14 @@
     flex-direction: column;
     gap: 2rem;
 
-    border: 1px solid black;
+    border-right: 0.1rem solid var(--divider-color);
+}
+
+.sidebar__section {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__section__title {
+    font-size: 0.75rem;
 }
