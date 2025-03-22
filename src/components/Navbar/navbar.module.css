@@ -1,0 +1,17 @@
+.container {
+    padding: 0.94rem 3.25rem 0.94rem 3.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav__actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav__search_container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}

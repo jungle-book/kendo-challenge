@@ -1,0 +1,20 @@
+.container {
+    padding: 0.75rem 0.63rem 0.75rem 0.63rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.63rem;
+    border: 0.1rem solid var(--divider-color);
+    border-radius: 0.75rem;
+}
+
+.container > input {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1rem;
+}
+
+.container > img {
+    width: 1rem;
+    height: 1rem;
+}
