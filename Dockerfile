@@ -7,6 +7,7 @@ WORKDIR /app
 
 
 FROM base AS build
+RUN pnpm install
 RUN pnpm run build
 
 FROM nginx:1.25.4-alpine3.18
