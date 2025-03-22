@@ -1,0 +1,8 @@
+.root__container {
+    /* max width still larger desktops */
+    max-width: 14404px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+}
