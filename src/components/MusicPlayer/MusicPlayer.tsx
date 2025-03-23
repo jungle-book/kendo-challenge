@@ -11,6 +11,9 @@ export const MusicPlayer: FC = () => {
         subTitle={"The XX"}
         description={"PLAYING FROM: COEXIST"}
       />
+      <div className={styles["audio__container"]}>
+        <audio controls></audio>
+      </div>
     </div>
   );
 };
