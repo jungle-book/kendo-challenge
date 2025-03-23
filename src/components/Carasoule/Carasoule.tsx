@@ -1,16 +1,33 @@
 import { FC, PropsWithChildren } from "react";
 
+import nextIcon from "@/assets/next.svg";
+import previousIcon from "@/assets/previous.svg";
+
 import styles from "./carasoule.module.css";
 import { clsx } from "clsx";
+import { IconButton } from "../IconButton";
 
-export const Carasoule: FC<PropsWithChildren> = ({ children }) => {
+export const Carasoule: FC<PropsWithChildren<CarasoulProps>> = ({
+  children,
+  title,
+}) => {
   return (
     <div className={clsx(styles["container"])}>
-      <div className={clsx(styles["container__list"])}>{children}</div>
+      <div>
+        <span>{title}</span>
+        <div>
+          <IconButton
+            icon={previousIcon}
+            classes={[styles["carasoule__action"]]}
+          />
+          <IconButton icon={nextIcon} classes={[styles["carasoule__action"]]} />
+        </div>
+      </div>
+      <div>{children}</div>
     </div>
   );
 };
 
-export const CarasouleItem: FC<PropsWithChildren> = ({ children }) => {
-  return <div>{children}</div>;
+type CarasoulProps = {
+  title: string;
 };

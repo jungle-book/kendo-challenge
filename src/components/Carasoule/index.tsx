@@ -1,1 +1,1 @@
-export { Carasoule, CarasouleItem } from "./Carasoule";
+export { Carasoule } from "./Carasoule";

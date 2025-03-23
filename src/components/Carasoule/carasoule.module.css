@@ -1,9 +1,34 @@
 .container {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.63rem;
+    padding-bottom: 0.63rem;
+
+    & > :nth-child(1) {
+        height: 2.38rem;
+        display: flex;
+        align-items: center;
+
+        & > span {
+            font-size: 1.13rem;
+            font-weight: 600;
+        }
+
+        & > :nth-child(2) {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.5rem;
+        }
+    }
+
+    & > :nth-child(2) {
+        display: flex;
+        gap: 1.5rem;
+    }
 }
 
-.container__list {
-    display: flex;
-    overflow-wrap: anywhere;
-    gap: 0.5rem;
+.carasoule__action {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
 }
