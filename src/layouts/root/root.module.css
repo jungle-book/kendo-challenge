@@ -1,9 +1,11 @@
-.root__container {
-    margin-left: auto;
-    margin-right: auto;
-
+.root {
     display: flex;
+    flex-direction: column;
+}
 
+.root__container {
+    height: calc(100vh - var(--music-player-height));
+    display: flex;
     border-left: 0.1rem solid var(--divider-color);
     border-right: 0.1rem solid var(--divider-color);
 }
@@ -12,6 +14,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    height: calc(100vh - var(--music-player-height));
 }
 
 .root__container__content__body {

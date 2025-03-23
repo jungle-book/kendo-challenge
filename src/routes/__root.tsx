@@ -11,7 +11,7 @@ function RootComponent() {
   return (
     <React.Fragment>
       <RootLayout />
-      <TanStackRouterDevtools />
+      <TanStackRouterDevtools position="top-right" />
     </React.Fragment>
   );
 }

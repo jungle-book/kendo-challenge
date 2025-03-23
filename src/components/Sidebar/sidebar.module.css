@@ -1,13 +1,10 @@
 .sidebar__container {
-    height: 100vh;
+    height: calc(100vh - var(--music-player-height));
     min-width: 16rem;
-
     padding: 0.74rem;
-
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
     border-right: 0.1rem solid var(--divider-color);
 }
 
